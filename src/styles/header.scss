@@ -1,0 +1,34 @@
+$header-paragraph-color: gainsboro;
+
+$logo-icon-color: rgb(110, 110, 210);
+$logo-background-color: white;
+
+.header {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+
+    .logo {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color: $logo-background-color;
+        position: relative;
+
+        i {
+            color: $logo-icon-color;
+            position: absolute;
+            margin: 0 auto;
+        }
+    }
+
+    p {
+        color: $header-paragraph-color;
+        max-width: 330px;
+        width: 90%;
+    }
+}

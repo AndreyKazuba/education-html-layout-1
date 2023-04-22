@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+$background-pink: rgba(224,120,133,1);
+$background-purple: rgba(96,81,148,1);
+
+$common-button-border-color: rgba(128, 128, 128, 0.521);
+$common-button-hover-color: rgba(128, 128, 128, 0.151);
+
+$common-button-blue-color: rgb(139, 201, 240);
+$common-button-blue-hover-color: rgba(81, 98, 182, 0.995);
+
+$line-left-color: rgba(224, 120, 132, 0.597);
+$line-center-color: rgba(133, 100, 157, 0.57);
+$line-right-color: rgba(111, 245, 255, 0.542);
+
+body {
+    margin: 0;
+    background: linear-gradient(40deg, $background-pink 0%, $background-purple 100%);
+    font-family: Roboto;
+}
+
+i.material-icons {
+    &.center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -52%);
+    }
+    &.small {
+        font-size: 24px;
+    }
+    &.big {
+        font-size: 60px;
+    }
+}
+
+.common-parapraph {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.big-paragraph {
+    font-size: 15px;
+    text-align: center;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+    user-select: none;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.common-button {
+    border: 1px solid $common-button-border-color;
+    border-radius: 4px;
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .5s;
+
+    &:hover {
+        background-color: $common-button-hover-color;
+        border-color: transparent;
+    }
+
+    &.blue {
+        background-color: $common-button-blue-color;
+        color: white;
+        border-color: transparent;
+
+        &:hover {
+            background-color: $common-button-blue-hover-color;
+        }
+    }
+}
+
+.line {
+    height: 2px;
+    width: 100px;
+    background: linear-gradient(40deg, $line-left-color 0%, $line-center-color 50%, $line-right-color 100%);
+}

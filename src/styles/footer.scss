@@ -1,0 +1,114 @@
+.footer {
+    color: white;
+    width: 90%;
+    margin: 40px auto;
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 70px;
+
+        .block {
+            max-width: 300px;
+            font-size: 12px;
+
+            h4 {
+                margin-bottom: 20px;
+                font-size: 18px;
+            }
+
+            & > p {
+                color: rgb(205, 205, 205);
+                line-height: 18px;
+                margin-bottom: 20px;
+            }
+
+            .common-button {
+                border-color: rgba(196, 196, 196, 0.564);
+
+                &:hover {
+                    border-color: transparent;
+                }
+            }
+
+            .block-grid {
+                display: flex;
+                gap: 20px;
+                margin-bottom: 15px;
+
+                .column:nth-child(1) {
+                    color: white;
+
+                    p {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .column:nth-child(2) {
+                    color: rgb(205, 205, 205);
+
+                    p {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .circle-buttons-group {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                .circle-button {
+                    height: 34px;
+                    width: 34px;
+                    border-radius: 100%;
+                    border: 1px solid rgba(210, 210, 210, 0.566);
+                    transition: .5s;
+                    position: relative;
+
+                    i {
+                        cursor: pointer;
+                        position: absolute;
+                        font-size: 20px;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -53%);
+                    }
+
+                    &:hover {
+                        border-color: rgb(139, 201, 240);
+                        color: rgb(139, 201, 240);
+                    }
+                }
+            }
+        }
+    }
+
+    .ending {
+        text-align: center;
+        margin-top: 40px;
+        color: rgba(210, 210, 210, 0.566);
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        width: 80%;
+
+        .info {
+            flex-direction: column;
+            gap: 30px;
+
+            .block {
+                font-size: 14px;
+                max-width: none;
+            }
+        }
+
+        .ending {
+            text-align: left;
+        }
+    }
+}
